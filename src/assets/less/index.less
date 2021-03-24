@@ -1,0 +1,51 @@
+@import './variable.less';
+@import './base.less';
+@import './variable.less';
+@import './button.less';
+
+// 内容块阴影
+.content-shadow{
+  border:1px solid @borderColor;
+  box-shadow:0px 0px 18px 2px rgba(76,142,250,0.1); 
+}
+
+// icon hover色
+.myicon:hover{
+  color: @primary !important;
+}
+
+// 只有下划线的select
+.underline {
+  .ant-input {
+    // border: none;
+    font-size: 12px;
+    color: #666666;
+    // border-bottom: 1px solid #DDDDDD;
+  }
+}
+.line-down {
+  height: 40px;
+  line-height: 40px;
+  .ant-select-selection, .ant-select-selection__rendered, .ant-input, input {
+    height: inherit;
+    line-height: inherit;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    vertical-align: bottom;
+    
+    &:focus {
+      border: none;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  .ant-calendar-picker-input {
+    padding: 0;
+  }
+}
+
+// 设置一些媒体查询
+@media screen and (max-width: 768px) {
+  .ant-layout-content {
+    margin: 25px 0 0 0 !important;
+  }
+}
